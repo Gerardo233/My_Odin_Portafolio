@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -13,19 +13,58 @@
 		<title>Odin Recipes</title>
 	</head>
 	<body>
-		<h1>Odin Recipes</h1>
+		<header class="page-header cross-main-center">
+			<div class="img">
+				<img
+					src="https://cdn-icons-png.flaticon.com/128/11520/11520781.png"
+					alt=""
+				/>
+			</div>
+			<h1 id="titulo">Odin Recipes</h1>
+		</header>
 		<main class="main-content">
-			<ul class="list-recipes">
-				<li class="recipe">
-					<a href="./recipes/bang_bang.html">Bang Bang Souce</a>
-				</li>
-				<li class="recipe">
-					<a href="./recipes/double_decker_taco.html">Double Decker Tacos</a>
-				</li>
-				<li class="recipe">
-					<a href="./recipes/sweet_slaw.html">Sweet Restaurent Slaw</a>
-				</li>
-			</ul>
+			<article class="dish">
+				<h3>Bang Bang Souce</h3>
+				<div class="descripcion">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sed
+						quasi quos expedita iure quis exercitationem, perspiciatis neque
+						accusamus! Non eum repellat dolor nostrum ducimus, neque illum
+						cupiditate aspernatur similique rerum quod, nam ratione voluptate
+						nobis ut amet. Numquam dolorem in facere sit corrupti culpa eaque,
+						perspiciatis praesentium expedita optio!
+					</p>
+				</div>
+                <a href="./recipes/bang_bang.html"><button class="show-more">Show...</button></a>
+			</article>
+			<article class="dish">
+				<h3>Double Decker Tacos</h3>
+				<div class="descripcion">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sed
+						quasi quos expedita iure quis exercitationem, perspiciatis neque
+						accusamus! Non eum repellat dolor nostrum ducimus, neque illum
+						cupiditate aspernatur similique rerum quod, nam ratione voluptate
+						nobis ut amet. Numquam dolorem in facere sit corrupti culpa eaque,
+						perspiciatis praesentium expedita optio!
+					</p>
+				</div>
+                <a href="./recipes/double_decker_taco.html"><button class="show-more">Show...</button></a>
+			</article>
+			<article class="dish">
+				<h3>Sweet Restaurent Slaw</h3>
+				<div class="descripcion">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sed
+						quasi quos expedita iure quis exercitationem, perspiciatis neque
+						accusamus! Non eum repellat dolor nostrum ducimus, neque illum
+						cupiditate aspernatur similique rerum quod, nam ratione voluptate
+						nobis ut amet. Numquam dolorem in facere sit corrupti culpa eaque,
+						perspiciatis praesentium expedita optio!
+					</p>
+				</div>
+                <a href="./recipes/sweet_slaw.html"><button class="show-more">Show...</button></a>
+			</article>
 		</main>
 	</body>
 </html>
