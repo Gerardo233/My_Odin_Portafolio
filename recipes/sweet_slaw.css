@@ -1,0 +1,186 @@
+:root {
+	--main-color-background: #ff6d60;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(243, 248, 255);
+}
+
+/*Styles fo the header*/
+.cross-main-center {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.page-header {
+	background-color: var(--main-color-background);
+	width: 100%;
+}
+
+.page-header > h1 {
+	font-family: 'Borel', cursive;
+	font-size: 6rem;
+	font-weight: 900;
+	display: block;
+	height: 9rem;
+	font-style: italic;
+	color: white;
+}
+
+.page-header > .img {
+	width: min-content;
+	height: min-content;
+}
+
+.img img {
+	width: 200px;
+	height: 200px;
+}
+
+/*These are the styles for the recipe-container section*/
+.recipe-container {
+	width: 90%;
+	box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.463);
+	border-radius: 15px;
+	margin: 50px auto;
+	padding: 10px 10px;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.recipe-name h3 {
+	font-family: 'Asap', sans-serif;
+	font-size: 2rem;
+	position: relative;
+	white-space: nowrap;
+	display: inline-block;
+	text-align: center;
+}
+
+.recipe-name h3::after {
+	content: ' ';
+	width: 100%;
+	height: 5px;
+	background-color: rgba(165, 42, 42, 0.797);
+	position: absolute;
+	left: 0;
+	top: 40px;
+	background: repeating-linear-gradient(
+		45deg,
+		#ff6d60 0,
+		#ff6d60 10px,
+		transparent 10px,
+		transparent 20px
+	);
+}
+
+/*Here I start coding the styles for the content of the recipe-container*/
+
+.recipe-container > div,
+.ingredients {
+	padding: 20px;
+}
+
+.recipe-container .recipe-name {
+	grid-column: 1/-1;
+	display: flex;
+	justify-content: center;
+}
+
+.recipe-container .instructions-section {
+	grid-column: 2/4;
+	/* min-width: 700px; */
+}
+
+.recipe-container .instructions-section > ol,
+.recipe-container .instructions-section > h4,
+.list li,
+.ingredients h4 {
+	font-family: 'REM', sans-serif;
+}
+
+.recipe-container .instructions-section,
+h4 {
+	font-size: 1.4rem;
+	margin-left: 20px;
+}
+
+.recipe-container .instructions-section > ol {
+	width: 80%;
+}
+
+.list li {
+	font-size: 1.2rem;
+	margin: 10px 0 10px 20px;
+	position: relative;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.recipe-container .reference > img {
+	width: 100%;
+	max-width: 270px;
+	border-radius: 10px;
+	justify-self: center;
+	filter: contrast(140%);
+}
+
+.recipe-container .reference .ingredients {
+	height: max-content;
+	/*  border: 1px solid black; */
+
+	justify-self: center;
+}
+
+.reference {
+	border-right: 3px solid rgba(0, 0, 0, 0.441);
+	/* border: 1px solid black; */
+}
+
+.recipe-container .reference {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: max-content;
+	gap: 10px;
+	width: 100%;
+	min-width: 400px;
+
+	/*   min-width: 300px; */
+}
+
+/*Button styles to go back to the index page*/
+.show-more {
+	padding: 10px;
+	font-family: 'REM', sans-serif;
+	font-weight: bold;
+	font-size: 1.1rem;
+	border: none;
+	background: repeating-linear-gradient(
+		45deg,
+		#ff6d60 0,
+		#ff6d60 10px,
+		#ff6d60ee 10px,
+		#ff6d60ee 20px
+	);
+	border-radius: 15px;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s;
+	opacity: 0.8;
+	margin-top: 20px;
+}
+
+.show-more:hover {
+	opacity: 1;
+	transition: 0.5s;
+	transform: translateX(15px);
+}
